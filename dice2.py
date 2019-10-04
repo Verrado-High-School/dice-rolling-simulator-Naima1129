@@ -12,17 +12,14 @@ threes = 0
 fours = 0
 fives = 0
 sixes = 0
-sevens = 0
-eights = 0
-nines = 0
-tens = 0
+
 
 i = 0
 print("Total Rolls: " + str(num_rolled))
 
 while i < num_rolled:
 	i += 1
-	D4 = random.randrange(1, 5, 1)
+	D4 = random.randrange(1, 7, 1)
 	D6 = random.randrange(1, 7, 1)
 	D8 = random.randrange(1, 9, 1)
 	D10 = random.randrange(1, 11, 1)
@@ -37,9 +34,14 @@ while i < num_rolled:
 		twos += 1
 	elif D4 == 3:
 		threes += 1
+	elif D4 == 5:
+		fives += 1
+	elif D4 == 6:
+		sixes += 1
 	else: 
 		D4 == 4
 		fours += 1
+
 
 	
 	print("1s - " + str(ones))
